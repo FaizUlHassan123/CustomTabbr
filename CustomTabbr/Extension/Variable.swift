@@ -59,7 +59,6 @@ class Variables {
     var viewControllerAfterReportSubmitted:Any?
     var isReportingComment:Bool = false
     var isRedirectingMembersScreen:Bool = false
-    var objNotificaions:Notifications?
     var player: AVAudioPlayer?
 }
 

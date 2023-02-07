@@ -423,7 +423,7 @@ class round_rightCorenrs:UIView {
 
     override func draw(_ rect: CGRect) {
 
-        self.roundCorners(corners: [.topRight, .bottomRight], radius: 10)
+//        self.roundCorners(corners: [.topRight, .bottomRight], radius: 10)
     }
 
 }

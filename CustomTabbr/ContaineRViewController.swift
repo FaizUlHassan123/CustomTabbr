@@ -133,13 +133,11 @@ class ContainerViewController: UIViewController {
         btnBottomMenu = btnBottomMenu.sorted(by: { $0.tag < $1.tag })
         lblBottomline = lblBottomline.sorted(by: { $0.tag < $1.tag })
 
-        addBlurEffect()
         
         //  viewBottombar.addShadow(to: [.top], radius:  2 , toColor: UIColor.lightGray)
         
         // Badge
         setFriendsTabBadge()
-        setChatsTabBadge()
         
     }
     //MARK::
