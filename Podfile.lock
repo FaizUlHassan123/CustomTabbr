@@ -1,0 +1,104 @@
+PODS:
+  - Alamofire (4.9.0)
+  - AlamofireImage (3.6.0):
+    - Alamofire (~> 4.9)
+  - BezierCurveView (4.0.1)
+  - Branch (1.45.1)
+  - FloatingPanel (1.7.6)
+  - HCSStarRatingView (1.5)
+  - IQDropDownTextField (3.0.2)
+  - IQKeyboardManagerSwift (6.5.0)
+  - MarqueeLabel (3.2.0):
+    - MarqueeLabel/ObjC (= 3.2.0)
+  - MarqueeLabel/ObjC (3.2.0)
+  - MBProgressHUD (1.2.0)
+  - NVActivityIndicatorView/Base (5.1.1)
+  - NVActivityIndicatorView/Extended (5.1.1):
+    - NVActivityIndicatorView/Base
+  - PryntTrimmerView (4.0.2)
+  - RSKPlaceholderTextView (6.1.0)
+  - SDWebImage (5.14.2):
+    - SDWebImage/Core (= 5.14.2)
+  - SDWebImage/Core (5.14.2)
+  - SimpleAnimation (0.4.2)
+  - SKPhotoBrowser (7.1.0)
+  - SteviaLayout (4.7.3)
+  - SwiftLinkPreview (3.4.0)
+  - SwiftSoup (2.4.3)
+  - VisualEffectView (3.1.0)
+  - YPImagePicker (5.2.1):
+    - PryntTrimmerView (= 4.0.2)
+    - SteviaLayout (= 4.7.3)
+
+DEPENDENCIES:
+  - Alamofire (<= 4.9)
+  - AlamofireImage
+  - BezierCurveView
+  - Branch
+  - FloatingPanel (~> 1.7.6)
+  - HCSStarRatingView (~> 1.5)
+  - IQDropDownTextField
+  - IQKeyboardManagerSwift (= 6.5.0)
+  - MarqueeLabel (= 3.2.0)
+  - MBProgressHUD (~> 1.2.0)
+  - NVActivityIndicatorView/Extended
+  - RSKPlaceholderTextView
+  - SDWebImage
+  - SimpleAnimation
+  - SKPhotoBrowser
+  - SwiftLinkPreview
+  - SwiftSoup
+  - VisualEffectView
+  - VisualEffectView (= 3.1.0)
+  - YPImagePicker
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - AlamofireImage
+    - BezierCurveView
+    - Branch
+    - FloatingPanel
+    - HCSStarRatingView
+    - IQDropDownTextField
+    - IQKeyboardManagerSwift
+    - MarqueeLabel
+    - MBProgressHUD
+    - NVActivityIndicatorView
+    - PryntTrimmerView
+    - RSKPlaceholderTextView
+    - SDWebImage
+    - SimpleAnimation
+    - SKPhotoBrowser
+    - SteviaLayout
+    - SwiftLinkPreview
+    - SwiftSoup
+    - VisualEffectView
+    - YPImagePicker
+
+SPEC CHECKSUMS:
+  Alamofire: afc3e7c6db61476cb45cdd23fed06bad03bbc321
+  AlamofireImage: be9963c6582d68b39e89191f64c82a7d7bf40fdd
+  BezierCurveView: 21fc940b4d694c7574f96e9036557636e8bf506d
+  Branch: ef3dfd3fdfeae9fe1cd7d5dd505e700a2c3b7d72
+  FloatingPanel: 9016eac88f21ca9fce53f5709e1f49485c0c355e
+  HCSStarRatingView: 1d18f79654735514cd6f00e6d90e38cb6320dc31
+  IQDropDownTextField: 6894c0f8b3acddd1e1bdf167ee23df7a3c30c705
+  IQKeyboardManagerSwift: 6cd19976c6e871907c4ed9127c2d3affdd4defc2
+  MarqueeLabel: 440a502b91a9179bd98f9fff00ba1150650a1c0e
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
+  NVActivityIndicatorView: 1f6c5687f1171810aa27a3296814dc2d7dec3667
+  PryntTrimmerView: 6a43cc90df5d99addeabd33d4ba09b1365322130
+  RSKPlaceholderTextView: 52f26e643b6f9bbf16f45cd2bbe2181b6dfe090c
+  SDWebImage: b9a731e1d6307f44ca703b3976d18c24ca561e84
+  SimpleAnimation: 5430010b9548f392e7459290acce01c9ceba7171
+  SKPhotoBrowser: cd95b95a6f352fc2a50992721299f75ead77f9ab
+  SteviaLayout: c2ecdcff57d44e38fd2f65e54ad52aeae28ca0c4
+  SwiftLinkPreview: c1bc5b2cb3cd42f2865137c1a61f5d788dcf5c9c
+  SwiftSoup: 3384f2e618cfc1b3cbc7852c16692fe8de13fb8f
+  VisualEffectView: 922eedf8d7d7e776a367ac11e0a4d4a0b2ba3545
+  YPImagePicker: f36043210c10b0783034eb1947d6e06e31c461e4
+
+PODFILE CHECKSUM: 338482feddf01d04802cfcee303160a8bb4f3952
+
+COCOAPODS: 1.11.3

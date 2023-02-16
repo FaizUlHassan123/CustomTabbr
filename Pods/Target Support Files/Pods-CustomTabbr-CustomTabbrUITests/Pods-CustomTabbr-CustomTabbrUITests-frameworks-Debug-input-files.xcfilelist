@@ -1,0 +1,22 @@
+${PODS_ROOT}/Target Support Files/Pods-CustomTabbr-CustomTabbrUITests/Pods-CustomTabbr-CustomTabbrUITests-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
+${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework
+${BUILT_PRODUCTS_DIR}/BezierCurveView/BezierCurveView.framework
+${BUILT_PRODUCTS_DIR}/Branch/Branch.framework
+${BUILT_PRODUCTS_DIR}/FloatingPanel/FloatingPanel.framework
+${BUILT_PRODUCTS_DIR}/HCSStarRatingView/HCSStarRatingView.framework
+${BUILT_PRODUCTS_DIR}/IQDropDownTextField/IQDropDownTextField.framework
+${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework
+${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework
+${BUILT_PRODUCTS_DIR}/MarqueeLabel/MarqueeLabel.framework
+${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework
+${BUILT_PRODUCTS_DIR}/PryntTrimmerView/PryntTrimmerView.framework
+${BUILT_PRODUCTS_DIR}/RSKPlaceholderTextView/RSKPlaceholderTextView.framework
+${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework
+${BUILT_PRODUCTS_DIR}/SKPhotoBrowser/SKPhotoBrowser.framework
+${BUILT_PRODUCTS_DIR}/SimpleAnimation/SimpleAnimation.framework
+${BUILT_PRODUCTS_DIR}/SteviaLayout/Stevia.framework
+${BUILT_PRODUCTS_DIR}/SwiftLinkPreview/SwiftLinkPreview.framework
+${BUILT_PRODUCTS_DIR}/SwiftSoup/SwiftSoup.framework
+${BUILT_PRODUCTS_DIR}/VisualEffectView/VisualEffectView.framework
+${BUILT_PRODUCTS_DIR}/YPImagePicker/YPImagePicker.framework

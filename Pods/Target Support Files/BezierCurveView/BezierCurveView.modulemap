@@ -1,0 +1,6 @@
+framework module BezierCurveView {
+  umbrella header "BezierCurveView-umbrella.h"
+
+  export *
+  module * { export * }
+}

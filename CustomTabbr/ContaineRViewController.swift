@@ -13,7 +13,7 @@ enum PopupButton: Int {
 
 
 import UIKit
-
+import VisualEffectView
 
 class ContainerViewController: UIViewController {
     
@@ -39,7 +39,6 @@ class ContainerViewController: UIViewController {
 
     
     // Tutorial
-    @IBOutlet weak var vwTutorialOverlay: UIView!
     @IBOutlet weak var vwBottomBarOverlay: UIView!
     @IBOutlet weak var vwTopBarOverlay: UIView!
     @IBOutlet weak var vwTapBarOverlay: UIView!
@@ -51,26 +50,11 @@ class ContainerViewController: UIViewController {
     @IBOutlet weak var vwFrndCreateArrow: UIView!
 
     @IBOutlet weak var btnCreateOverlay: UIButton!
-    @IBOutlet weak var imgVwDropchatTutorial: UIImageView!
-    @IBOutlet weak var imgVwPostTutorial: UIImageView!
-    @IBOutlet weak var imgVwLivestreamTutorial: UIImageView!
 
-    @IBOutlet weak var imgVwArrow1: UIImageView!
-    @IBOutlet weak var imgVwArrow2: UIImageView!
-    @IBOutlet weak var imgVwArrow3: UIImageView!
 
-    @IBOutlet weak var imgFrndVwArrow1: UIImageView!
-    @IBOutlet weak var imgFrndVwArrow2: UIImageView!
-    @IBOutlet weak var imgFrndVwArrow3: UIImageView!
-
-    @IBOutlet weak var bottomConstraintTutorialLabel: NSLayoutConstraint!
     
     @IBOutlet weak var heightConstraintTopBarOverlay: NSLayoutConstraint!
     
-    @IBOutlet weak var btnExitTutorial: UIButton!
-    
-    @IBOutlet weak var bottomConstraintBlurView: NSLayoutConstraint!
-    @IBOutlet weak var tabBarImage: UIImageView!
 
 
     
@@ -110,15 +94,16 @@ class ContainerViewController: UIViewController {
         //Load User image on botton Navigation buttoon
         let sideSize: CGFloat = 32
 
-        let imgplaceholder = UIImage(named: "new_placholder_profile3")
-
-
-        btnAccount.setImage(imgplaceholder , for: .normal)
-        btnAccount.setImage(imgplaceholder , for: .selected)
+//        let imgplaceholder = UIImage(named: "new_placholder_profile3")
+//
+//
+//        btnAccount.setImage(imgplaceholder , for: .normal)
+//        btnAccount.setImage(imgplaceholder , for: .selected)
 
     }
 
     override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         setupUI()
         self.navigationController?.setNavigationBarHidden(true, animated: true)
     }
@@ -152,6 +137,7 @@ class ContainerViewController: UIViewController {
     
 
     override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
         //        UIApplication.shared.statusBarStyle = .default
         
 //        invalidateArrowTimer()
@@ -193,8 +179,8 @@ class ContainerViewController: UIViewController {
     func addSelectedOptionControllerToView() {
         
         btnBottomMenu[selectedIndex].isSelected = true
-        lblBottomMenu[selectedIndex].textColor = .white
-        //        lblBottomline[selectedIndex].backgroundColor = Color.BaseColor.value
+        lblBottomMenu[selectedIndex].textColor = UIColor(named: "menu_unselect_color")!
+//        lblBottomline[selectedIndex].backgroundColor = UIColor(named: "menu_unselect_color")!
         //        lblBottomline[selectedIndex].cornerRadius = lblBottomline[selectedIndex].height / 2
         
         //        UIView.animate(withDuration: 0.3, animations: {() -> Void in
@@ -217,6 +203,7 @@ class ContainerViewController: UIViewController {
         contentView.addSubview(currentViewController.view)
         currentViewController.didMove(toParent: self)
     }
+    
     func removePreviuoslyAddedView() {
         
         let previousViewController = viewControllers[previousIndex]
@@ -224,10 +211,6 @@ class ContainerViewController: UIViewController {
         previousViewController.view.removeFromSuperview()
         previousViewController.removeFromParent()
     }
-
-
-    
-
     
     
     @IBAction func btnMenuBarClick(_ sender: UIButton) {
@@ -237,8 +220,8 @@ class ContainerViewController: UIViewController {
             self.btnCenterButtonClicked(self.btnMenu)
 
         }
-//        Variables.shared.selectedBottomMenuTag = sender.tag - 1
-        Variables.shared.selectedBottomMenuTag = sender.tag
+        Variables.shared.selectedBottomMenuTag = sender.tag - 1
+//        Variables.shared.selectedBottomMenuTag = sender.tag
         //        if Variables.shared.selectedBottomMenuTag == 1{
         //            let dic = ["peopleNearBySelected": false]
         //            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + .milliseconds(15)) { () -> () in
@@ -293,11 +276,11 @@ class ContainerViewController: UIViewController {
                 UIView.animate(withDuration: 0.4, delay: 0.1, options: .curveEaseInOut, animations: {
 
                     //for button left constarint becacse hiddong other two button
-                    let width = (self.menuCenterViewController.menuView.frame.size.width / 2) - 30
-                    self.menuCenterViewController.constraintBtnChatLeading.constant =  width
+//                    let width = (self.menuCenterViewController.menuView.frame.size.width / 2) - 30
+//                    self.menuCenterViewController.constraintBtnChatLeading.constant =  width
 
 
-                    //                                self.menuCenterViewController.constraintBtnChatLeading.constant =  30
+                    self.menuCenterViewController.constraintBtnChatLeading.constant =  30
                     self.menuCenterViewController.constraintBtnDropTraling.constant =  30
                     self.menuCenterViewController.constraintBtnPostTop.constant = 30
 
@@ -322,7 +305,7 @@ class ContainerViewController: UIViewController {
     @objc func refreshMenuSelection() {
         previousIndex = selectedIndex
         btnBottomMenu[previousIndex].isSelected = false
-        lblBottomMenu[previousIndex].textColor = UIColor(named: "menu_unselect_color")!
+        lblBottomMenu[previousIndex].textColor = UIColor.white
         lblBottomline[previousIndex].backgroundColor = UIColor.clear
         selectedIndex = Variables.shared.selectedBottomMenuTag
         if(previousIndex != selectedIndex){
